@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    color: black;
+    background-color: rgb(0, 255, 89);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right,#000, #333);
+    color: white;
+}
+
+.container{
+    min-height: 50vh;
+    width: 30%;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid lightgrey;
+}
+
+.input{
+    margin-top: 1.5rem;
+}
+
+input{
+    height: 3rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.country{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-container{
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height: 2rem;
+}
+
+select{
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding-inline: 0.5rem;
+    background: none;
+    color: white;
+}
+
+option{
+    color: black;
+}
+
+form > p{
+    margin-top: 1.5rem;
+}
+
+button{
+    padding: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    border: 0;
+    border-radius: 1rem;
+    background-color: rgb(0, 255, 89);
+    color: #111;
+    font-size: 1.3rem;
+    transition: 200ms ease-in-out all;
+}
+
+button:active{
+    scale: 0.9;
+}
+
+.select-container, .select-container img, .select-container select, button{
+    cursor: pointer;
+}
+
+@media (max-width: 1200px){
+    .container{
+        min-height: 50vh;
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        width: 80%;
+    }
+}
